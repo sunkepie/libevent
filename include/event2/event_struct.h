@@ -118,7 +118,7 @@ struct event_callback {
 	} evcb_cb_union;
 	void *evcb_arg;
 };
-
+#define ev_flags ev_evcallback.evcb_flags
 struct event_base;
 struct event {
 	struct event_callback ev_evcallback;
